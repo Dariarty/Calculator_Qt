@@ -1,22 +1,27 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQuickView>
 
 
 int main(int argc, char *argv[])
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-#endif
     QGuiApplication app(argc, argv);
 
-    QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/qml/calculator.qml"));
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+    QQuickView *view = new QQuickView;
+
+    view->setSource(QUrl("qrc:/qml/calculator.qml"));
+
+    view->setTitle("Calculator");
+
+    view->setWidth(350);
+    view->setMinimumWidth(350);
+    view->setMaximumWidth(350);
+
+    view->setHeight(500);
+    view->setMinimumHeight(500);
+    view->setMaximumHeight(500);
+
+    view->show();
 
     return app.exec();
 }
