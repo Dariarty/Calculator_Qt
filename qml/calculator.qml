@@ -28,7 +28,7 @@ Rectangle{
 
     Rectangle{
         id: buttonsArea
-        color: "#ededed"
+        color: "#e0e0e0"
         anchors.top: screenArea.bottom
         anchors.bottom: root.bottom
         width: root.width
