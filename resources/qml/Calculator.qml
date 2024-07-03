@@ -21,7 +21,7 @@ Rectangle{
                 margins: 5
             }
             onCursorVisibleChanged: if(!cursorVisible) cursorVisible = true
-            font.pointSize: 40
+            font.pointSize: 35
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignBottom
             height: parent.height

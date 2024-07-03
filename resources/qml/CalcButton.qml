@@ -9,7 +9,7 @@ Button {
     property string downColor: "#cfcfcf"
     property string hoverColor: "#eAeAeA"
 
-    font.pointSize: 25
+    font.pointSize: 22
 
     width: (parent.width - parent.spacing * 3) / 4
     height: (parent.height - parent.spacing * 4) / 5
