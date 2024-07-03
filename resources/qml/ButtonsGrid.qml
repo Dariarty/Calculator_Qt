@@ -2,8 +2,6 @@ import QtQuick 2.15
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 
-import operationTypes 1.0
-
 Grid{
     id: buttonGrid
     width: buttonsArea.width
@@ -14,36 +12,24 @@ Grid{
     spacing: 3
     anchors.margins: 4
 
-    CalcButton{
+    OperationButton{
         text: "C"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Clear)
-        }
+        operationName: "clear"
     }
 
-    CalcButton{
+    OperationButton{
         text: "del"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Backspace)
-        }
+        operationName: "del"
     }
 
-    CalcButton{
+    OperationButton{
         text: "( )"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Bracket)
-        }
+        operationName: "bracket"
     }
 
-    CalcButton{
+    OperationButton{
         text: "÷"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Division)
-        }
+        operationName: "divide"
     }
 
     DigitButton{
@@ -58,12 +44,9 @@ Grid{
         value: 9
     }
 
-    CalcButton{
+    OperationButton{
         text: "×"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Multiplication)
-        }
+        operationName: "multiply"
     }
 
     DigitButton{
@@ -78,12 +61,9 @@ Grid{
         value: 6
     }
 
-    CalcButton{
+    OperationButton{
         text: "-"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Subtraction)
-        }
+        operationName: "subtract"
     }
 
     DigitButton{
@@ -98,44 +78,28 @@ Grid{
         value: 3
     }
 
-    CalcButton{
+    OperationButton{
         text: "+"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Addition)
-        }
+        operationName: "add"
     }
 
-    CalcButton{
+    OperationButton{
         text: "+/-"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.SwitchSign)
-        }
+        operationName: "switch_sign"
     }
 
-    CalcButton{
-        text: "0"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(0);
-        }
+    DigitButton{
+        value: 0
     }
 
-    CalcButton{
+    OperationButton{
         text: "."
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.FloatPoint)
-        }
+        operationName: "float_point"
     }
 
-    CalcButton{
+    OperationButton{
         text: "="
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.operationPressed(Operations.Result)
-        }
+        operationName: "result"
     }
 
 }

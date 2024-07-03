@@ -11,7 +11,7 @@ void CalcModelController::digitPressed(const int &digit)
     qDebug() << "DIGIT PRESSED: " << digit;
 }
 
-void CalcModelController::operationPressed(const Operations::OperationType &operation)
+void CalcModelController::operationPressed(const QString &operation)
 {
     qDebug() << "OPERATION PRESSED: " << operation;
 }

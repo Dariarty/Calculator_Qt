@@ -17,9 +17,7 @@ UiManager::UiManager(QObject *parent)
 void UiManager::qmlRegister()
 {
     view_->engine()->rootContext()->setContextProperty("UiManager", this);
-    view_->engine()->rootContext()->setContextProperty("CalcModel", calcModel_);
-
-    qmlRegisterType<Operations>("operationTypes", 1, 0, "Operations");
+    view_->engine()->rootContext()->setContextProperty("CalcModel", calcModel_); 
 }
 
 void UiManager::loadUi()
