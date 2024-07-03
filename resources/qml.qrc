@@ -3,5 +3,6 @@
         <file>qml/Calculator.qml</file>
         <file>qml/CalcButton.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/ButtonsGrid.qml</file>
     </qresource>
 </RCC>

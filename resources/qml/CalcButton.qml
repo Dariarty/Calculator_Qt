@@ -19,6 +19,7 @@ Button {
     background: Rectangle {
         color: button.down ? button.downColor :
                button.hovered ? button.hoverColor : button.color
+        radius: 3
     }
 
     contentItem: Text{

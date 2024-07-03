@@ -6,7 +6,7 @@
 
 namespace calculator {
 
-//Enums for calculator operations
+//Enum Class for Identifying Calculator operations
 class Operations : public QObject
 {
     Q_OBJECT
@@ -24,15 +24,17 @@ public:
         FloatPoint,
         Clear,
     };
+
     Q_ENUM(OperationType)
 };
 
-//Calculator Model Controller
+//Calculator Model Controller Class
 class CalcModelController : public QObject
 {
     Q_OBJECT
 public:
     explicit CalcModelController(QObject *parent = nullptr);
+    ~CalcModelController() = default;
 
     Q_INVOKABLE void digitPressed(const int &digit);
     Q_INVOKABLE void operationPressed(const Operations::OperationType &operation);

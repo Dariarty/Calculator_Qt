@@ -8,12 +8,12 @@ CalcModelController::CalcModelController(QObject *parent)
 
 void CalcModelController::digitPressed(const int &digit)
 {
-    Q_UNUSED(digit)
+    qDebug() << "DIGIT PRESSED: " << digit;
 }
 
 void CalcModelController::operationPressed(const Operations::OperationType &operation)
 {
-    Q_UNUSED(operation)
+    qDebug() << "OPERATION PRESSED: " << operation;
 }
 
 } // namespace calculator
