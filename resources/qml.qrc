@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/calculator.qml</file>
+        <file>qml/Calculator.qml</file>
         <file>qml/CalcButton.qml</file>
-        <file>qml/qtquickcontrols2.conf</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

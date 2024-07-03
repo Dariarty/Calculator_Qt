@@ -8,7 +8,7 @@ Rectangle{
 
     Rectangle{
         id: screenArea
-        color: "lightgrey"
+        color: "#dedede"
         anchors.top: root.top
         width: root.width
         height: root.height * 0.2

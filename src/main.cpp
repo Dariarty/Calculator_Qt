@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 
     QQuickView *view = new QQuickView;
 
-    view->setSource(QUrl("qrc:/qml/calculator.qml"));
+    view->setSource(QUrl("qrc:/qml/Calculator.qml"));
 
     view->setTitle("Calculator");
 

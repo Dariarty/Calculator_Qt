@@ -3,4 +3,5 @@ QT += quick
 SOURCES += \
         src/main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += \ 
+        resources/qml.qrc
