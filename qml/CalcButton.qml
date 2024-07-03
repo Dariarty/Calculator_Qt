@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.12
-import QtQuick.Controls.Basic
+import QtQuick.Controls.Styles 1.4
 
 Button {
     id: button
