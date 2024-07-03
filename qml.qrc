@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/calculator.qml</file>
+        <file>qml/CalcButton.qml</file>
     </qresource>
 </RCC>
