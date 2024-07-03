@@ -46,28 +46,16 @@ Grid{
         }
     }
 
-    CalcButton{
-        text: "7"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(7);
-        }
+    DigitButton{
+        value: 7
     }
 
-    CalcButton{
-        text: "8"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(8);
-        }
+    DigitButton{
+        value: 8
     }
 
-    CalcButton{
-        text: "9"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(9);
-        }
+    DigitButton{
+        value: 9
     }
 
     CalcButton{
@@ -78,28 +66,16 @@ Grid{
         }
     }
 
-    CalcButton{
-        text: "4"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(4);
-        }
+    DigitButton{
+        value: 4
     }
 
-    CalcButton{
-        text: "5"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(5);
-        }
+    DigitButton{
+        value: 5
     }
 
-    CalcButton{
-        text: "6"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(6);
-        }
+    DigitButton{
+        value: 6
     }
 
     CalcButton{
@@ -110,28 +86,16 @@ Grid{
         }
     }
 
-    CalcButton{
-        text: "1"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(1);
-        }
+    DigitButton{
+        value: 1
     }
 
-    CalcButton{
-        text: "2"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(2);
-        }
+    DigitButton{
+        value: 2
     }
 
-    CalcButton{
-        text: "3"
-        onClicked: {
-            numField.forceActiveFocus()
-            CalcModel.digitPressed(3);
-        }
+    DigitButton{
+        value: 3
     }
 
     CalcButton{
