@@ -18,7 +18,7 @@ Rectangle{
             anchors{
                 fill: parent
                 centerIn: parent.Center
-                bottomMargin: 5
+                margins: 5
             }
             font.pointSize: 40
             horizontalAlignment: Text.AlignRight
