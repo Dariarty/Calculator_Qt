@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 
 Rectangle{
     id: root
@@ -13,6 +14,7 @@ Rectangle{
         height: root.height * 0.2
 
         TextInput{
+            id: numField
             anchors{
                 fill: parent
                 centerIn: parent.Center
@@ -111,7 +113,6 @@ Rectangle{
                 id: digit2Button
                 text: "2"
             }
-
 
             CalcButton{
                 id: digit3Button

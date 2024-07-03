@@ -1,21 +1,24 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 
 Button {
     id: button
 
     property string color: "white"
     property string downColor: "#cfcfcf"
+    property string hoverColor: "#eAeAeA"
 
     font.pointSize: 25
 
     width: (parent.width - parent.spacing * 3) / 4
     height: (parent.height - parent.spacing * 4) / 5
 
-    hoverEnabled: false
+    hoverEnabled: true
 
     background: Rectangle {
-        color: button.down ? button.downColor : button.color
+        color: button.down ? button.downColor :
+               button.hovered ? button.hoverColor : button.color
     }
 
     contentItem: Text{
