@@ -2,12 +2,12 @@ import QtQuick 2.0
 
 CalculatorButton {
 
-    property string functionString
+    property string buttonFunction
 
-    text: functionString
+    text: buttonFunction
 
     onReleased: {
         numField.forceActiveFocus()
-        CalcModel.functionPressed(functionString)
+        CalcModel.functionalButtonPressed(buttonFunction)
     }
 }

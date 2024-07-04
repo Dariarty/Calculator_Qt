@@ -16,7 +16,7 @@ Grid{
         text: "C"
         onReleased: {
             numField.forceActiveFocus()
-            CalcModel.clearPressed()
+            CalcModel.clearButtonPressed()
         }
 
         content.color: "white"
@@ -26,15 +26,15 @@ Grid{
     }
 
     FunctionalButton{
-        functionString: "("
+        buttonFunction: "("
     }
 
     FunctionalButton{
-        functionString: ")"
+        buttonFunction: ")"
     }
 
     FunctionalButton{
-        functionString: "÷"
+        buttonFunction: "÷"
     }
 
     DigitButton{
@@ -50,7 +50,7 @@ Grid{
     }
 
     FunctionalButton{
-        functionString: "×"
+        buttonFunction: "×"
     }
 
     DigitButton{
@@ -66,7 +66,7 @@ Grid{
     }
 
     FunctionalButton{
-        functionString: "-"
+        buttonFunction: "-"
     }
 
     DigitButton{
@@ -82,11 +82,11 @@ Grid{
     }
 
     FunctionalButton{
-        functionString: "+"
+        buttonFunction: "+"
     }
 
     FunctionalButton{
-        functionString: "%"
+        buttonFunction: "%"
     }
 
     DigitButton{
@@ -94,7 +94,7 @@ Grid{
     }
 
     FunctionalButton{
-        functionString: "."
+        buttonFunction: "."
     }
 
     CalculatorButton{
@@ -102,7 +102,7 @@ Grid{
 
         onReleased: {
             numField.forceActiveFocus()
-            CalcModel.resultPressed()
+            CalcModel.resultButtonPressed()
         }
 
         content.color: "white"

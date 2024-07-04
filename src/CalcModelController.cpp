@@ -21,7 +21,7 @@ void CalcModelController::updateScreenText(const QString &newText)
 }
 
 //Digit Button pressed in GUI
-void CalcModelController::digitPressed(const int &digit)
+void CalcModelController::digitButtonPressed(const int &digit)
 {
     screenText_.insert(cursorPos_, QString::number(digit));
     cursorPos_++;
@@ -30,8 +30,8 @@ void CalcModelController::digitPressed(const int &digit)
 }
 
 //Functional Button Pressed in GUI
-void CalcModelController::functionPressed(const QString &function){
-
+void CalcModelController::functionalButtonPressed(const QString &function)
+{
     screenText_.insert(cursorPos_, function);
     cursorPos_+=function.length();
 
@@ -39,8 +39,8 @@ void CalcModelController::functionPressed(const QString &function){
 }
 
 //Clear button Pressed in GUI
-void CalcModelController::clearPressed(){
-
+void CalcModelController::clearButtonPressed()
+{
     screenText_ = "";
     cursorPos_ = 0;
 
@@ -48,7 +48,7 @@ void CalcModelController::clearPressed(){
 }
 
 //Result button Pressed in GUI
-void CalcModelController::resultPressed(){
+void CalcModelController::resultButtonPressed(){
 
     //Format text fort evaluating
     QString formattedText_ = screenText_;

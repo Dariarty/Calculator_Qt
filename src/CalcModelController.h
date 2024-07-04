@@ -19,10 +19,10 @@ public:
     Q_INVOKABLE void updateScreenText(const QString &newText);
 
     //Button Presses from QML
-    Q_INVOKABLE void digitPressed(const int &digit);
-    Q_INVOKABLE void functionPressed(const QString &function);
-    Q_INVOKABLE void clearPressed();
-    Q_INVOKABLE void resultPressed();
+    Q_INVOKABLE void digitButtonPressed(const int &digit);
+    Q_INVOKABLE void functionalButtonPressed(const QString &function);
+    Q_INVOKABLE void clearButtonPressed();
+    Q_INVOKABLE void resultButtonPressed();
 
 
 

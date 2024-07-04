@@ -10,7 +10,7 @@ CalculatorButton {
 
     onReleased:{
         numField.forceActiveFocus()
-        CalcModel.digitPressed(value);
+        CalcModel.digitButtonPressed(value);
     }
 
 }
