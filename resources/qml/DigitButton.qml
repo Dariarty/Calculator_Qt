@@ -7,7 +7,7 @@ CalcButtonTemplate {
 
     text: value
 
-    onClicked:{
+    onReleased:{
         numField.forceActiveFocus()
         CalcModel.digitPressed(value);
     }

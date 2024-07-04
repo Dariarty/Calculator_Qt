@@ -5,7 +5,7 @@ import QtQuick.Controls.Imagine 2.12
 CalcButtonTemplate {
     property string operationName: ""
 
-    onClicked:{
+    onReleased:{
         numField.forceActiveFocus()
         CalcModel.operationPressed(operationName);
     }
