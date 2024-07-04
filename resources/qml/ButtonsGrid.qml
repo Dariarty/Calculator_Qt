@@ -12,24 +12,25 @@ Grid{
     spacing: 3
     anchors.margins: 3
 
-    OperationButton{
+    CalculatorButton{
         text: "C"
-        operationName: "clear"
+
+        onReleased: {
+            numField.forceActiveFocus()
+            CalcModel.clearPressed()
+        }
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "del"
-        operationName: "del"
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "( )"
-        operationName: "bracket"
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "÷"
-        operationName: "divide"
     }
 
     DigitButton{
@@ -44,9 +45,8 @@ Grid{
         value: 9
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "×"
-        operationName: "multiply"
     }
 
     DigitButton{
@@ -61,9 +61,8 @@ Grid{
         value: 6
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "-"
-        operationName: "subtract"
     }
 
     DigitButton{
@@ -78,28 +77,24 @@ Grid{
         value: 3
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "+"
-        operationName: "add"
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "+/-"
-        operationName: "switch_sign"
     }
 
     DigitButton{
         value: 0
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "."
-        operationName: "float_point"
     }
 
-    OperationButton{
+    CalculatorButton{
         text: "="
-        operationName: "result"
     }
 
 }

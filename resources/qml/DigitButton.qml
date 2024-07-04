@@ -2,7 +2,8 @@ import QtQuick 2.15
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 
-CalcButtonTemplate {
+CalculatorButton {
+
     property int value: 0
 
     text: value
@@ -11,4 +12,5 @@ CalcButtonTemplate {
         numField.forceActiveFocus()
         CalcModel.digitPressed(value);
     }
+
 }

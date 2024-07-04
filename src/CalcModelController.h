@@ -20,7 +20,7 @@ public:
 
     //Button Presses from QML
     Q_INVOKABLE void digitPressed(const int &digit);
-    Q_INVOKABLE void operationPressed(const QString &operation);
+    Q_INVOKABLE void clearPressed();
 
 signals:
     //signal to programmatically update display

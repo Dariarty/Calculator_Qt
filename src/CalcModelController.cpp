@@ -29,9 +29,12 @@ void CalcModelController::digitPressed(const int &digit)
     emit screenTextUpdated(screenText_, cursorPos_);
 }
 
-void CalcModelController::operationPressed(const QString &operation)
-{
-    qDebug() << "OPERATION PRESSED: " << operation;
+//Clear button Pressed
+void CalcModelController::clearPressed(){
+    screenText_ = "";
+    cursorPos_ = 0;
+
+    emit screenTextUpdated(screenText_, cursorPos_);
 }
 
 } // namespace calculator

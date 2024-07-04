@@ -10,7 +10,7 @@
 #include "CalcModelController.h"
 
 namespace {
-const QString kMainQmlName = "qrc:/qml/Calculator.qml";
+const QString kMainQmlName = "qrc:/qml/CalculatorWindow.qml";
 const QString kAppTitle = "Calculator";
 const int kDefaultWidth = 350;
 const int kDefaultHeight = 500;
