@@ -9,6 +9,8 @@ Button {
     property string downColor: "#cfcfcf"
     property string hoverColor: "#eAeAeA"
 
+    property alias content: contentText
+
     font.pointSize: 22
 
     width: (parent.width - parent.spacing * 3) / 4

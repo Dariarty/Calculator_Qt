@@ -29,12 +29,33 @@ void CalcModelController::digitPressed(const int &digit)
     emit screenTextUpdated(screenText_, cursorPos_);
 }
 
-//Clear button Pressed
+//Functional Button Pressed in GUI
+void CalcModelController::functionPressed(const QString &function){
+
+    screenText_.insert(cursorPos_, function);
+    cursorPos_+=function.length();
+
+    emit screenTextUpdated(screenText_, cursorPos_);
+}
+
+//Clear button Pressed in GUI
 void CalcModelController::clearPressed(){
+
     screenText_ = "";
     cursorPos_ = 0;
 
     emit screenTextUpdated(screenText_, cursorPos_);
 }
+
+//Result button Pressed in GUI
+void CalcModelController::resultPressed(){
+
+    //PLACEHOLDER
+    screenText_ = "ANSWER";
+    cursorPos_ = 0;
+
+    emit screenTextUpdated(screenText_, cursorPos_);
+}
+
 
 } // namespace calculator

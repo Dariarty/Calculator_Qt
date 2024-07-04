@@ -14,23 +14,27 @@ Grid{
 
     CalculatorButton{
         text: "C"
-
         onReleased: {
             numField.forceActiveFocus()
             CalcModel.clearPressed()
         }
+
+        content.color: "white"
+        color: "#ff3838"
+        downColor: "#b81212"
+        hoverColor: "#ff7070"
     }
 
-    CalculatorButton{
-        text: "del"
+    FunctionalButton{
+        functionString: "("
     }
 
-    CalculatorButton{
-        text: "( )"
+    FunctionalButton{
+        functionString: ")"
     }
 
-    CalculatorButton{
-        text: "÷"
+    FunctionalButton{
+        functionString: "÷"
     }
 
     DigitButton{
@@ -45,8 +49,8 @@ Grid{
         value: 9
     }
 
-    CalculatorButton{
-        text: "×"
+    FunctionalButton{
+        functionString: "×"
     }
 
     DigitButton{
@@ -61,8 +65,8 @@ Grid{
         value: 6
     }
 
-    CalculatorButton{
-        text: "-"
+    FunctionalButton{
+        functionString: "-"
     }
 
     DigitButton{
@@ -77,24 +81,35 @@ Grid{
         value: 3
     }
 
-    CalculatorButton{
-        text: "+"
+    FunctionalButton{
+        functionString: "+"
     }
 
-    CalculatorButton{
-        text: "+/-"
+    FunctionalButton{
+        functionString: "%"
     }
 
     DigitButton{
         value: 0
     }
 
-    CalculatorButton{
-        text: "."
+    FunctionalButton{
+        functionString: "."
     }
 
     CalculatorButton{
         text: "="
+
+        onReleased: {
+            numField.forceActiveFocus()
+            CalcModel.resultPressed()
+        }
+
+        content.color: "white"
+        color: "#3dba42"
+        downColor: "#14c919"
+        hoverColor: "#75d178"
+
     }
 
 }

@@ -5,5 +5,6 @@
         <file>qtquickcontrols2.conf</file>
         <file>qml/ButtonsGrid.qml</file>
         <file>qml/DigitButton.qml</file>
+        <file>qml/FunctionalButton.qml</file>
     </qresource>
 </RCC>
