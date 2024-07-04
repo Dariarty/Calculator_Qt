@@ -7,4 +7,6 @@ Desktop GUI Calculator using C++ Qt/QML
 
 ## Screenshots
 
-![alt text](assets/app_image_qt_calc.png)
+| Built on Linux Mint 21.3 using Qt5.15 | Built on Windows 11 using Qt6 |
+| --- | --- |
+![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
