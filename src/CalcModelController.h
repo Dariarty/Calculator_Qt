@@ -24,9 +24,14 @@ public:
     Q_INVOKABLE void clearPressed();
     Q_INVOKABLE void resultPressed();
 
+
+
 signals:
     //signal to programmatically update display
     void screenTextUpdated(const QString &newText, const int &newCursorPos);
+
+    //signal to evaluate formatted string
+    void evaluateExpression(const QString &mathExpression);
 
 private:
     int cursorPos_;

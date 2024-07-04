@@ -6,12 +6,31 @@ Rectangle{
     id: root
     color: "transparent"
 
+    function calculate(mathStr){
+        return new Function('return ' + mathStr)();
+    }
+
     Connections{
         target: CalcModel
 
         function onScreenTextUpdated(newText, newCursorPos){
             numField.text = newText
             numField.cursorPosition = newCursorPos
+        }
+
+        function onEvaluateExpression(fomattedText_){
+            try{
+                numField.text = Number(calculate(fomattedText_).toFixed(10))
+                numField.cursorPosition = numField.text.length
+
+                CalcModel.updateScreenText(numField.text)
+                CalcModel.updateCursorPos(numField.cursorPosition)
+
+            } catch(error){
+                if(error instanceof SyntaxError){
+
+                }
+            }
         }
     }
 
@@ -45,7 +64,7 @@ Rectangle{
             id: upperBorder
             anchors.top: parent.top
             width: root.width
-            height: 10
+            height: 6
             color: "#d0d0d0"
         }
 
@@ -53,7 +72,7 @@ Rectangle{
             id: lowerBorder
             anchors.bottom: parent.bottom
             width: root.width
-            height: 7
+            height: 3
             color: "#d0d0d0"
         }
 

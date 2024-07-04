@@ -50,11 +50,14 @@ void CalcModelController::clearPressed(){
 //Result button Pressed in GUI
 void CalcModelController::resultPressed(){
 
-    //PLACEHOLDER
-    screenText_ = "ANSWER";
-    cursorPos_ = 0;
+    //Format text fort evaluating
+    QString formattedText_ = screenText_;
 
-    emit screenTextUpdated(screenText_, cursorPos_);
+    //Replace operand symbols
+    formattedText_.replace("÷","/");
+    formattedText_.replace("×","*");
+
+    emit evaluateExpression(formattedText_);
 }
 
 
