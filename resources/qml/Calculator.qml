@@ -6,6 +6,14 @@ Rectangle{
     id: root
     color: "transparent"
 
+    Connections{
+        target: CalcModel
+        onScreenTextUpdated: {
+            numField.text = newText
+            numField.cursorPosition = newCursorPos
+        }
+    }
+
     Rectangle{
         id: screenArea
         color: "#dedede"
@@ -18,7 +26,9 @@ Rectangle{
             anchors{
                 fill: parent
                 centerIn: parent.Center
-                margins: 5
+                topMargin: 15
+                bottomMargin: 15
+                rightMargin: 6
             }
             onCursorVisibleChanged: if(!cursorVisible) cursorVisible = true
             font.pointSize: 35
@@ -26,7 +36,26 @@ Rectangle{
             verticalAlignment: Text.AlignBottom
             height: parent.height
             width: parent.width
+            onCursorPositionChanged: CalcModel.updateCursorPos(cursorPosition)
+            onTextEdited: CalcModel.updateScreenText(text)
         }
+
+        Rectangle{
+            id: upperBorder
+            anchors.top: parent.top
+            width: root.width
+            height: 10
+            color: "#d0d0d0"
+        }
+
+        Rectangle{
+            id: lowerBorder
+            anchors.bottom: parent.bottom
+            width: root.width
+            height: 7
+            color: "#d0d0d0"
+        }
+
     }
 
     Rectangle{

@@ -10,7 +10,7 @@ Grid{
     columns: 4
     rows: 5
     spacing: 3
-    anchors.margins: 4
+    anchors.margins: 3
 
     OperationButton{
         text: "C"
