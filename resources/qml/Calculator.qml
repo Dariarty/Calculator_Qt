@@ -8,7 +8,8 @@ Rectangle{
 
     Connections{
         target: CalcModel
-        onScreenTextUpdated: {
+
+        function onScreenTextUpdated(newText, newCursorPos){
             numField.text = newText
             numField.cursorPosition = newCursorPos
         }
