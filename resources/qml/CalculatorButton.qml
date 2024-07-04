@@ -9,7 +9,9 @@ Button {
     property string downColor: "#cfcfcf"
     property string hoverColor: "#eAeAeA"
 
-    font.pointSize: 25
+    property alias content: contentText
+
+    font.pointSize: 22
 
     width: (parent.width - parent.spacing * 3) / 4
     height: (parent.height - parent.spacing * 4) / 5
@@ -19,6 +21,7 @@ Button {
     background: Rectangle {
         color: button.down ? button.downColor :
                button.hovered ? button.hoverColor : button.color
+        radius: 3
     }
 
     contentItem: Text{

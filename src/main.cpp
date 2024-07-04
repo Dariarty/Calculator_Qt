@@ -2,26 +2,17 @@
 #include <QQmlApplicationEngine>
 #include <QQuickView>
 
+#include "UiManager.h"
 
 int main(int argc, char *argv[])
 {
+    int exitCode = -111;
+
     QGuiApplication app(argc, argv);
 
-    QQuickView *view = new QQuickView;
+    calculator::UiManager uiManager;
 
-    view->setSource(QUrl("qrc:/qml/Calculator.qml"));
+    exitCode = app.exec();
 
-    view->setTitle("Calculator");
-
-    view->setResizeMode(QQuickView::SizeRootObjectToView);
-
-    view->setWidth(350);
-    view->setMinimumWidth(350);
-
-    view->setHeight(500);
-    view->setMinimumHeight(500);
-
-    view->show();
-
-    return app.exec();
+    return exitCode;
 }
