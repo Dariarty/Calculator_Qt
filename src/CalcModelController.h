@@ -24,7 +24,7 @@ public:
 
 signals:
     //signal to programmatically update display
-    void screenTextUpdated(const QString &newText, int newCursorPos);
+    void screenTextUpdated(const QString &newText, const int &newCursorPos);
 
 private:
     int cursorPos_;

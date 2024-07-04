@@ -32,7 +32,7 @@ Rectangle{
                 rightMargin: 6
             }
             onCursorVisibleChanged: if(!cursorVisible) cursorVisible = true
-            font.pointSize: 35
+            font.pointSize: numField.text.length > 13 ? 24 : 35
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignBottom
             height: parent.height
