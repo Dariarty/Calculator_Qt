@@ -6,4 +6,7 @@
 Десктопный GUI Кальлкулятор на C++ Qt/QML
 
 ## Скриншоты
-![alt text](assets/app_image_qt_calc.png)
+
+| Сборка на Linux Mint 21.3 с Qt5.15 | Сборка на Windows 11 с Qt6.7.2 |
+| --- | --- |
+![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
