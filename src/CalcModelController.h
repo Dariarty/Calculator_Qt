@@ -24,10 +24,8 @@ public:
     Q_INVOKABLE void clearButtonPressed();
     Q_INVOKABLE void resultButtonPressed();
 
-
-
 signals:
-    //signal to programmatically update display
+    //signal to update display
     void screenTextUpdated(const QString &newText, const int &newCursorPos);
 
     //signal to evaluate formatted string

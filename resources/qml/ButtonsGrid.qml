@@ -14,6 +14,7 @@ Grid{
 
     CalculatorButton{
         text: "C"
+
         onReleased: {
             numField.forceActiveFocus()
             CalcModel.clearButtonPressed()
@@ -109,7 +110,6 @@ Grid{
         color: "#3dba42"
         downColor: "#14c919"
         hoverColor: "#75d178"
-
     }
 
 }

@@ -28,7 +28,7 @@ Rectangle{
 
             } catch(error){
                 if(error instanceof SyntaxError){
-
+                    console.log("Syntax Error")
                 }
             }
         }
@@ -50,12 +50,14 @@ Rectangle{
                 bottomMargin: 15
                 rightMargin: 6
             }
-            onCursorVisibleChanged: if(!cursorVisible) cursorVisible = true
+
             font.pointSize: numField.text.length > 13 ? 24 : 35
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignBottom
             height: parent.height
             width: parent.width
+
+            onCursorVisibleChanged: if(!cursorVisible) cursorVisible = true
             onCursorPositionChanged: CalcModel.updateCursorPos(cursorPosition)
             onTextEdited: CalcModel.updateScreenText(text)
         }

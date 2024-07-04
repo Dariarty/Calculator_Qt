@@ -50,7 +50,7 @@ void CalcModelController::clearButtonPressed()
 //Result button Pressed in GUI
 void CalcModelController::resultButtonPressed(){
 
-    //Format text fort evaluating
+    //Format text for evaluating
     QString formattedText_ = screenText_;
 
     //Replace operand symbols
