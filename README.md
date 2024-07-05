@@ -20,7 +20,7 @@ C++ Mathematical Expression Parser is in development
 ![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
 
 ## Setup
-Project is current in a pre-release state and has to be built manually</br>
+Project is currently in a pre-release state and has to be built manually</br>
 Building both for Windows and Linux is supported
 1.  Download MinGW compiler</br>
 2.  Download and install Qt and QtCreator</br>
