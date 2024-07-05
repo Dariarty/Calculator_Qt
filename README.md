@@ -31,15 +31,15 @@ Building both for Windows and Linux is supported
      ```
 5.  Build the project using qmake build system in Qt Creator</br>
 
-## Roadmap
+## ToDo
 
 - [x] Design a GUI
 - [x] Add Basic Functionality to calculate math expressions
+- [ ] Add tab with calculations history
+- [ ] Add additional buttons for extended functionality
+- [ ] Improve Display's visibility by switching to multiline layout and allowing vertical scrolling
 - [ ] Switch to a different calculation method, such as QJSEngine or C++ math parser
 - [ ] Publish first release
-- [ ] Add tab with calculations history
-- [ ] Improve Display's visibility by switching to multiline layout and allowing vertical scrolling
-- [ ] Add additional buttons for extended functionality
 
 See the [open issues](https://github.com/Dariarty/Calculator_Qt/issues) for a full list of planned features and known issues.
 
