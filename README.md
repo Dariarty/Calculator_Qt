@@ -10,8 +10,7 @@ Simple desktop GUI Calculator with Flat design using Qt/QML and C++
 This application provides convenient and simple way to calculate arithmetic operations. </br>
 App features basic mathematic calculations and supports input from keyboard  </br>
 </br>
-Currently, Javascript's Function() Constructor is used to calculate mathematical expressions. </br>
-C++ Mathematical Expression Parser is in development
+Currently, the input is evaluated as a Javascript code using Function() Constructor to calculate mathematical expressions. </br>
 
 ## Screenshots
 
@@ -36,7 +35,7 @@ Building both for Windows and Linux is supported
 
 - [x] Design a GUI
 - [x] Add Basic Functionality to calculate math expressions
-- [ ] Develop a Mathematic Expression Parser in C++ to use in an app
+- [ ] Switch to a different calculation method, such as QJSEngine or C++ math parser
 - [ ] Publish first release
 - [ ] Add tab with calculations history
 - [ ] Improve Display's visibility by switching to multiline layout and allowing vertical scrolling
