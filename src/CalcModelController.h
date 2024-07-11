@@ -2,6 +2,7 @@
 #define CALCMODELCONTROLLER_H
 
 #include <QDebug>
+#include <QJSEngine>
 #include <QObject>
 
 namespace calculator {
@@ -28,12 +29,11 @@ signals:
     //signal to update display
     void screenTextUpdated(const QString &newText, const int &newCursorPos);
 
-    //signal to evaluate formatted string
-    void evaluateExpression(const QString &mathExpression);
-
 private:
     int cursorPos_;
     QString screenText_;
+
+    QScopedPointer<QJSEngine> engine_;
 };
 
 } // namespace calculator

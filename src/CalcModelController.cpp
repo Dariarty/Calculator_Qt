@@ -6,6 +6,7 @@ CalcModelController::CalcModelController(QObject *parent)
     : QObject(parent)
     , cursorPos_(0)
     , screenText_("")
+    , engine_(new QJSEngine())
 {}
 
 //Update Cursor Position when changed by user
@@ -22,7 +23,7 @@ void CalcModelController::updateScreenText(const QString &newText)
 
 //Digit Button pressed in GUI
 void CalcModelController::digitButtonPressed(const int &digit)
-{
+{   
     screenText_.insert(cursorPos_, QString::number(digit));
     cursorPos_++;
 
@@ -57,7 +58,19 @@ void CalcModelController::resultButtonPressed(){
     formattedText_.replace("÷","/");
     formattedText_.replace("×","*");
 
-    emit evaluateExpression(formattedText_);
+    //Evaluate expression
+    QJSValue value = engine_->evaluate(formattedText_);
+
+    if (value.isNumber()) {
+        formattedText_ = QString::number(value.toNumber(), 'g', 10);
+
+        if (formattedText_ != screenText_) {
+            screenText_ = formattedText_;
+            cursorPos_ = formattedText_.length();
+
+            emit screenTextUpdated(screenText_, cursorPos_);
+        }
+    }
 }
 
 
