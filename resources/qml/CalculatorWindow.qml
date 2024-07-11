@@ -6,31 +6,12 @@ Rectangle{
     id: root
     color: "transparent"
 
-    function calculate(mathStr){
-        return new Function('return ' + mathStr)();
-    }
-
     Connections{
         target: CalcModel
 
         function onScreenTextUpdated(newText, newCursorPos){
             numField.text = newText
             numField.cursorPosition = newCursorPos
-        }
-
-        function onEvaluateExpression(fomattedText_){
-            try{
-                numField.text = Number(calculate(fomattedText_).toFixed(10))
-                numField.cursorPosition = numField.text.length
-
-                CalcModel.updateScreenText(numField.text)
-                CalcModel.updateCursorPos(numField.cursorPosition)
-
-            } catch(error){
-                if(error instanceof SyntaxError){
-                    console.log("Syntax Error")
-                }
-            }
         }
     }
 
