@@ -18,8 +18,7 @@
 | --- | --- |
 ![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
 
-## Установка
-Проект находит в пререлизном состоянии и может быть собран вручную.</br>
+## Сборка исходного кода
 Поддерживается сборка на Windows и Linux.</br>
 1.  Загрузить компилятор MinGW.</br>
 2.  Загрузить и установить Qt5/Qt6 и среду разработки QtCreator.</br>
