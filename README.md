@@ -45,4 +45,4 @@ See the [open issues](https://github.com/Dariarty/Calculator_Qt/issues) for a fu
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
