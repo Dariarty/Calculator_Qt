@@ -18,9 +18,8 @@ The input expression is evaluated as a JavaScript code using QJSEngine. </br>
 | --- | --- |
 ![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
 
-## Setup
-Project is currently in a pre-release state and has to be built manually.</br>
-Building both for Windows and Linux is supported.
+## Building From Source Code
+Building both for Windows and Linux is supported. </br>
 1.  Download MinGW compiler.</br>
 2.  Download and install Qt and QtCreator.</br>
 3.  Configure Qt Creator Kit for Desktop. </br>
