@@ -46,6 +46,10 @@
 
 Смотри [open issues](https://github.com/Dariarty/Calculator_Qt/issues) для полного списка запланированных улучшений и известных проблем.
 
+## Атрибуция
+
+Иконка приложения создана [Freepik](https://freepik.com)
+
 ## Лицензия
 
 Распространяется под MIT License. Смотри [LICENSE](LICENSE) для полной информации.
