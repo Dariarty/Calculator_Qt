@@ -31,6 +31,7 @@ void UiManager::loadUi()
 
     view_->setSource(QUrl(kMainQmlName));
     view_->setTitle(kAppTitle);
+    view_->setIcon(QIcon(":/resources/calculator.png"));
 
     view_->show();
 }
