@@ -45,6 +45,10 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 
 See the [open issues](https://github.com/Dariarty/Calculator_Qt/issues) for a full list of planned features and known issues.
 
+## Attributions
+
+Application Icon is designed by [Freepik](https://freepik.com)
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
