@@ -36,11 +36,12 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 - [x] Design a GUI
 - [x] Add Basic Functionality to calculate math expressions
 - [x] Switch to QJSEngine instead of Function() constructor
+- [x] Publish first release
 - [ ] Add tab with calculations history
 - [ ] Add additional buttons for extended functionality
 - [ ] Improve Display's visibility by switching to multiline layout and allowing vertical scrolling
 - [ ] Develop C++ Math Expression Parser
-- [ ] Publish first release
+
 
 See the [open issues](https://github.com/Dariarty/Calculator_Qt/issues) for a full list of planned features and known issues.
 
