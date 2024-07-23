@@ -20,15 +20,16 @@ The input expression is evaluated as a JavaScript code using QJSEngine. </br>
 
 ## Building From Source Code
 Building both for Windows and Linux is supported. </br>
-1.  Download MinGW compiler.</br>
-2.  Download and install Qt and QtCreator.</br>
-3.  Configure Qt Creator Kit for Desktop. </br>
-    Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
-4.  Clone the repo.
+Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
+1.  Download and install Qt5.10+/Qt6, QtCreator and MinGW compiler.</br>
+2.  Configure Qt Creator Kit for Desktop. </br>
+3.  Clone the repo.
      ```sh
      git clone https://github.com/Dariarty/Calculator_Qt.git
      ```
-5.  Build the project using qmake build system in Qt Creator.</br>
+4.  Open src/calculator.pro in Qt Creator.</br>
+5.  Run qmake.</br>
+5.  Build the project in Qt Creator.</br>
 
 ## ToDo
 
