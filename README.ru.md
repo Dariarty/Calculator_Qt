@@ -29,8 +29,8 @@
      git clone https://github.com/Dariarty/Calculator_Qt.git
      ```
 5.  Открыть файл проекта src/calculator.pro в Qt Creator</br>
-5.  Запустить qmake.</br>
-5.  Собрать проект в Qt Creator.</br>
+6.  Запустить qmake.</br>
+7.  Собрать проект в Qt Creator.</br>
 
 ## Планы на разработку
 
