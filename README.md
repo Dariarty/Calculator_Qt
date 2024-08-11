@@ -7,11 +7,9 @@ Simple desktop GUI Calculator with Flat design made using Qt/QML/C++.
 
 ## About The Project
 
-This application provides convenient and simple way to calculate arithmetic operations. </br>
-</br>
-App features basic mathematic calculations and supports input from keyboard.  </br>
-</br>
-The input expression is evaluated as a JavaScript code using QJSEngine. </br>
+* This application provides convenient and simple way to calculate arithmetic operations
+* App features basic mathematic calculations and supports input from keyboard
+* The input expression is evaluated as a JavaScript code using QJSEngine
 
 ## Screenshots
 
