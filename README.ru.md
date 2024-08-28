@@ -16,7 +16,7 @@
 
 | Сборка на Linux Mint 21.3 с Qt 5.15 | Сборка на Windows 11 с Qt 6.7.2 |
 | --- | --- |
-![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
+![alt text](assets/screenshot_linuxmint.jpg) | ![alt text](assets/screenshot_windows11.jpg)
 
 ## Сборка исходного кода
 Поддерживается сборка на Windows и Linux.</br>
