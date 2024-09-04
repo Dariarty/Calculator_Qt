@@ -5,6 +5,8 @@
 
 Простой десктопный калькулятор с графическим интерфейсом в стиле Flat Design, написанный на Qt/QML/C++.
 
+<a href="https://dariarty.github.io/Calculator_Qt/" title="GitHub Pages link">Сайт GitHub Pages, созданный с помощью Qt WebAssembly</a>
+
 ## О проекте
 
 * Приложение предлагает простой и удобный способ делать повседневные вычисления
@@ -33,7 +35,9 @@
 
 ## Атрибуция
 
-Иконка приложения создана [Freepik](https://freepik.com)
+<a href="https://www.freepik.com/icon/calculator_951692#fromView=keyword&page=1&position=34&uuid=3d0c9de7-5eeb-4d4d-b4d3-89a9b932a649" title="app icon">Иконка приложения создана Freepik</a>
+
+<a href="https://www.reshot.com/free-svg-icons/item/calculator-D8AUTM5VCQ/" title="gh-pages loading icon">Логотип загрузки на GitHub Pages создан Guapoo - Reshot</a>
 
 ## Лицензия
 
