@@ -33,7 +33,9 @@ void UiManager::loadUi()
     view_->setTitle(kAppTitle);
     view_->setIcon(QIcon(":/resources/calculator.png"));
 
-    view_->show();
+    view_->showNormal();
+    view_->setPosition((view_->screen()->geometry().width() - kDefaultWidth) / 2,
+                       (view_->screen()->geometry().height() - kDefaultHeight) / 2);
 }
 
 } // namespace calculator
