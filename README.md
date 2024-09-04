@@ -34,6 +34,8 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 
 <a href="https://www.freepik.com/icon/calculator_951692#fromView=keyword&page=1&position=34&uuid=3d0c9de7-5eeb-4d4d-b4d3-89a9b932a649" title="app icon">Calculator icon created by Freepik</a>
 
+<a href="https://www.reshot.com/free-svg-icons/item/calculator-D8AUTM5VCQ/" title="gh-pages loading icon">GitHub Pages loading icon created by Guapoo - Reshot</a>
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
