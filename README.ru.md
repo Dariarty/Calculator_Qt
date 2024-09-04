@@ -24,14 +24,14 @@
 Минимальная поддерживаемая версия Qt 5.10. Также приложение может быть собрано на Qt6, протестирована сборка на Qt 6.7.2 </br>
 
 1.  Загрузить Qt5.10+/Qt6, Qt Creator и компилятор MinGW.</br>
-3.  Сконфигурировать Desktop Kit в Qt Creator. </br>
-4.  Склонировать репозиторий
+2.  Сконфигурировать Desktop Kit в Qt Creator. </br>
+3.  Склонировать репозиторий
      ```sh
      git clone https://github.com/Dariarty/Calculator_Qt.git
      ```
-5.  Открыть файл проекта src/calculator.pro в Qt Creator</br>
-6.  Запустить qmake.</br>
-7.  Собрать проект в Qt Creator.</br>
+4.  Открыть файл проекта src/calculator.pro в Qt Creator</br>
+5.  Запустить qmake.</br>
+6.  Собрать проект в Qt Creator.</br>
 
 ## Атрибуция
 
