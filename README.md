@@ -15,7 +15,7 @@ Simple desktop GUI Calculator with Flat design made using Qt/QML/C++.
 
 | Built on Linux Mint 21.3 using Qt 5.15 | Built on Windows 11 using Qt 6.7.2 |
 | --- | --- |
-![alt text](assets/screenshot_linuxmint.jpg) | ![alt text](assets/screenshot_windows11.jpg)
+![alt text](assets/screenshot_linuxmint.png) | ![alt text](assets/screenshot_windows11.png)
 
 ## Building Source Code
 Building both for Windows and Linux is supported. </br>
