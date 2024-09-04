@@ -32,7 +32,7 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 
 ## Attributions
 
-Application Icon is designed by [Freepik](https://freepik.com)
+[Application Icon is designed by Freepik]([https://freepik.com](https://www.freepik.com/icon/calculator_951692#fromView=keyword&page=1&position=34&uuid=3d0c9de7-5eeb-4d4d-b4d3-89a9b932a649))
 
 ## License
 
