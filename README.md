@@ -5,6 +5,8 @@
 
 Simple desktop GUI Calculator with Flat design made using Qt/QML/C++.
 
+<a href="https://dariarty.github.io/Calculator_Qt/" title="GitHub Pages link">GitHub Pages Website created using Qt for WebAssembly</a>
+
 ## About The Project
 
 * This application provides convenient and simple way to calculate arithmetic operations
