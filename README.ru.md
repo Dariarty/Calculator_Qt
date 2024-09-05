@@ -5,7 +5,7 @@
 
 Простой десктопный калькулятор с графическим интерфейсом в стиле Flat Design, написанный на Qt/QML/C++.
 
-<a href="https://dariarty.github.io/Calculator_Qt/" title="GitHub Pages link">Сайт GitHub Pages, созданный с помощью Qt WebAssembly</a>
+<a href="https://dariarty.github.io/Calculator_Qt/" title="GitHub Pages link">Сайт GitHub Pages (ПК), созданный с помощью Qt WebAssembly</a>
 
 ## О проекте
 
